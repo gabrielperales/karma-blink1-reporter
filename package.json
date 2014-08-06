@@ -1,0 +1,31 @@
+{
+  "name": "karma-blink1-reporter",
+  "version": "0.1.0",
+  "description": "A Karma plugin. Report results to blink(1).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/iamruinous/karma-blink1-reporter.git"
+  },
+  "bugs": {
+    "url": "http://github.com/iamruinous/karma-blink1-reporter/issues",
+    "email": "jade.meskill@gmail.com"
+  },
+  "keywords": [
+    "karma-plugin",
+    "karma-reporter",
+    "blink1",
+    "notification center"
+  ],
+  "author": "Jade Meskill <jade.meskill@gmail.com>",
+  "dependencies": {
+    "shelljs": "^0.3.0"
+  },
+  "peerDependencies": {
+    "karma": ">=0.9"
+  },
+  "license": "MIT"
+}
