@@ -14,6 +14,10 @@ var Blink1Reporter = function(helper, logger, config) {
     report(results);
   };
 
+  this.onRunStart = function() {
+    exec('blink1-tool --blue --blink 1');
+  };
+
   function report(results, browser) {
     if (results.disconnected || results.error) {
       exec('blink1-tool --random 5');
