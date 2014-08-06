@@ -23,6 +23,7 @@ var Blink1Reporter = function(helper, logger, config) {
     } else {
       exec('blink1-tool --green');
     }
+  }
 };
 
 Blink1Reporter.$inject = ['helper', 'logger', 'config'];
