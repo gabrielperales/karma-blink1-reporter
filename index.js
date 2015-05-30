@@ -23,16 +23,15 @@ var Blink1Reporter = function(helper, logger, config) {
       exec('blink1-tool --random 5');
     }
     else if (results.failed) {
-      exec('blink1-tool --red');
+      exec('blink1-tool --red --blink '+results.failed+' -m 50 -t 100');
     } else {
-      exec('blink1-tool --green');
+      exec('blink1-tool --green --blink 1');
     }
   }
 };
 
 Blink1Reporter.$inject = ['helper', 'logger', 'config'];
 
-// PUBLISH DI MODULE
 module.exports = {
   'reporter:blink1': ['type', Blink1Reporter]
 };
